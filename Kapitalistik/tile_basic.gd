@@ -5,6 +5,8 @@ var mouseReleaseObject = false
 
 var playersOnTile = []
 
+@onready var players = preload("res://player_temp.tscn")
+
 @export var colorTile : Color
 
 # Called when the node enters the scene tree for the first time.
@@ -22,6 +24,14 @@ func _process(delta):
 			mouseReleaseObject = false
 			playerObject = null
 		playersPosition()
+		
+	# Gera players dinamicamente
+	if Input.is_action_just_pressed("ui_up"):
+		var x = players.instantiate()
+		
+		get_parent().add_child(x)
+		
+		x.printConsole()
 	pass
 
 #função que coloca o player nas posições dentro dos tiles

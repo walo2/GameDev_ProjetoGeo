@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://yh26grf534pi"]
+[gd_scene load_steps=2 format=3 uid="uid://yh26grf534pi"]
 
-[ext_resource type="PackedScene" uid="uid://cg7sc7ox3xvm1" path="res://player_temp.tscn" id="1_mxqg4"]
 [ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
 
 [node name="Main" type="Node2D"]
@@ -112,19 +111,3 @@ position = Vector2(123, 305)
 
 [node name="TileTipe1 - 34" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(166, 428)
-
-[node name="PlayerTemp" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(259, 246)
-colorPlayer = Color(0, 0, 1, 1)
-
-[node name="PlayerTemp2" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(244, 170)
-colorPlayer = Color(1, 1, 0, 1)
-
-[node name="PlayerTemp3" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(308, 277)
-colorPlayer = Color(0, 1, 1, 1)
-
-[node name="PlayerTemp4" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(298, 199)
-colorPlayer = Color(0.996078, 0, 0.184314, 1)
