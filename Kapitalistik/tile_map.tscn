@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://yh26grf534pi"]
+[gd_scene load_steps=5 format=3 uid="uid://yh26grf534pi"]
 
 [ext_resource type="PackedScene" uid="uid://cg7sc7ox3xvm1" path="res://player_temp.tscn" id="1_mxqg4"]
 [ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
@@ -164,7 +164,7 @@ text = "Temp:
 Turno: diferentes jogadores
 Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
 
-[connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
-
 [node name="Roleta" parent="." instance=ExtResource("3_6dqb7")]
 position = Vector2(1022, 111)
+
+[connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
