@@ -32,8 +32,33 @@ position = Vector2(384, 46)
 [node name="Tile 07D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(453, 106)
 
+[node name="Tile 04F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(255, 239)
+
+[node name="Tile 05F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(322, 298)
+colorTile = Color(1, 0, 1, 1)
+
+[node name="Tile 06F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(386, 298)
+
+[node name="Tile 07F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(453, 238)
+
 [node name="Tile 08" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(518, 171)
+
+[node name="Tile 09D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(580, 238)
+
+[node name="Tile 10D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(648, 299)
+
+[node name="Tile 11D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(714, 299)
+
+[node name="Tile 12D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(784, 233)
 
 [node name="Tile 09F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(583, 108)
@@ -55,31 +80,6 @@ position = Vector2(918, 167)
 
 [node name="Tile 15" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(984, 167)
-
-[node name="Tile 03F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(255, 239)
-
-[node name="Tile 04F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(322, 298)
-colorTile = Color(1, 0, 1, 1)
-
-[node name="Tile 05F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(386, 298)
-
-[node name="Tile 06F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(453, 238)
-
-[node name="Tile 09D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(580, 238)
-
-[node name="Tile 10D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(648, 299)
-
-[node name="Tile 11D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(714, 299)
-
-[node name="Tile 12D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(784, 233)
 
 [node name="PlayerTemp" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(77, 96)
