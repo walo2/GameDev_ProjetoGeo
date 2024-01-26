@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://4gf5qcq6dfva"]
+[gd_scene load_steps=3 format=3 uid="uid://4gf5qcq6dfva"]
 
-[ext_resource type="Texture2D" uid="uid://bydujpcm5n8u1" path="res://icon.svg" id="1_phpge"]
+[ext_resource type="PackedScene" uid="uid://b0exb28ywc2d6" path="res://holder.tscn" id="1_316ti"]
+[ext_resource type="Script" path="res://hud.gd" id="1_dj65v"]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_dj65v")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 15
@@ -14,114 +16,14 @@ offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Holder" type="Control" parent="VBoxContainer"]
+[node name="Holder" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Icon" type="TextureRect" parent="VBoxContainer/Holder"]
-layout_mode = 0
-offset_right = 54.0
-offset_bottom = 48.0
-texture = ExtResource("1_phpge")
-expand_mode = 2
-
-[node name="User" type="Label" parent="VBoxContainer/Holder"]
-layout_mode = 0
-offset_left = 67.0
-offset_top = 2.0
-offset_right = 137.0
-offset_bottom = 25.0
-text = "User 1"
-
-[node name="Saldo" type="Label" parent="VBoxContainer/Holder"]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 27.0
-offset_right = 124.0
-offset_bottom = 50.0
-text = "0,33
-"
-
-[node name="Holder2" type="Control" parent="VBoxContainer"]
+[node name="Holder2" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Icon" type="TextureRect" parent="VBoxContainer/Holder2"]
-layout_mode = 0
-offset_right = 54.0
-offset_bottom = 48.0
-texture = ExtResource("1_phpge")
-expand_mode = 2
-
-[node name="User" type="Label" parent="VBoxContainer/Holder2"]
-layout_mode = 0
-offset_left = 67.0
-offset_top = 2.0
-offset_right = 137.0
-offset_bottom = 25.0
-text = "User 1"
-
-[node name="Saldo" type="Label" parent="VBoxContainer/Holder2"]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 27.0
-offset_right = 124.0
-offset_bottom = 50.0
-text = "0,33
-"
-
-[node name="Holder3" type="Control" parent="VBoxContainer"]
+[node name="Holder3" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Icon" type="TextureRect" parent="VBoxContainer/Holder3"]
-layout_mode = 0
-offset_right = 54.0
-offset_bottom = 48.0
-texture = ExtResource("1_phpge")
-expand_mode = 2
-
-[node name="User" type="Label" parent="VBoxContainer/Holder3"]
-layout_mode = 0
-offset_left = 67.0
-offset_top = 2.0
-offset_right = 137.0
-offset_bottom = 25.0
-text = "User 1"
-
-[node name="Saldo" type="Label" parent="VBoxContainer/Holder3"]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 27.0
-offset_right = 124.0
-offset_bottom = 50.0
-text = "0,33
-"
-
-[node name="Holder4" type="Control" parent="VBoxContainer"]
+[node name="Holder4" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Icon" type="TextureRect" parent="VBoxContainer/Holder4"]
-layout_mode = 0
-offset_right = 54.0
-offset_bottom = 48.0
-texture = ExtResource("1_phpge")
-expand_mode = 2
-
-[node name="User" type="Label" parent="VBoxContainer/Holder4"]
-layout_mode = 0
-offset_left = 67.0
-offset_top = 2.0
-offset_right = 137.0
-offset_bottom = 25.0
-text = "User 1"
-
-[node name="Saldo" type="Label" parent="VBoxContainer/Holder4"]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 27.0
-offset_right = 124.0
-offset_bottom = 50.0
-text = "0,33
-"

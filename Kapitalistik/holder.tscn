@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0exb28ywc2d6"]
+
+[ext_resource type="Texture2D" uid="uid://bydujpcm5n8u1" path="res://icon.svg" id="1_insot"]
+
+[node name="Holder" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_vertical = 3
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 48.0
+texture = ExtResource("1_insot")
+expand_mode = 2
+
+[node name="User" type="Label" parent="."]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 2.0
+offset_right = 137.0
+offset_bottom = 25.0
+text = "User 1"
+
+[node name="Saldo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 27.0
+offset_right = 124.0
+offset_bottom = 50.0
+text = "0,33
+"
+
+[node name="Marker2D" type="Marker2D" parent="."]
