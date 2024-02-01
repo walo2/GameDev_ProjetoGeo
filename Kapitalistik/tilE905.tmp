@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cg7sc7ox3xvm1" path="res://player_temp.tscn" id="1_mxqg4"]
 [ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
-[ext_resource type="Script" path="res://TempPassTurn.gd" id="3_1mgao"]
 [ext_resource type="PackedScene" uid="uid://c6m3o6wg8xy8m" path="res://roleta.tscn" id="3_6dqb7"]
 
 [node name="Main" type="Node2D"]
@@ -118,7 +117,6 @@ position = Vector2(166, 428)
 [node name="PlayerTemp" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(259, 246)
 colorPlayer = Color(0, 0, 1, 1)
-playerId = 2
 
 [node name="PlayerTemp2" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(244, 170)
@@ -127,47 +125,10 @@ colorPlayer = Color(1, 1, 0, 1)
 [node name="PlayerTemp3" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(308, 277)
 colorPlayer = Color(0, 1, 1, 1)
-playerId = 3
 
 [node name="PlayerTemp4" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(298, 199)
 colorPlayer = Color(0.996078, 0, 0.184314, 1)
 
-playerId = 1
-
-[node name="TempPassTurn" type="Node2D" parent="."]
-position = Vector2(936, 550)
-script = ExtResource("3_1mgao")
-
-[node name="ColorRect" type="ColorRect" parent="TempPassTurn"]
-offset_right = 121.0
-offset_bottom = 33.0
-metadata/_edit_lock_ = true
-
-[node name="Button" type="Button" parent="TempPassTurn"]
-offset_right = 121.0
-offset_bottom = 31.0
-text = "Passar o turno"
-metadata/_edit_lock_ = true
-
-[node name="TextEdit" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = 42.0
-offset_top = -147.0
-offset_right = 200.0
-offset_bottom = -34.0
-
-[node name="TextEdit2" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = 22.0
-offset_top = -388.0
-offset_right = 205.0
-offset_bottom = -226.0
-text = "Temp: 
-Turno: diferentes jogadores
-Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
-
-[connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
-
-
 [node name="Roleta" parent="." instance=ExtResource("3_6dqb7")]
 position = Vector2(1022, 111)
-
