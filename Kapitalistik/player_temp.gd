@@ -1,9 +1,11 @@
 extends Node2D
 
+
 var drag = false
 var offset = Vector2(0,0)
 
 @export var colorPlayer : Color
+@export var playerId = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,8 +20,9 @@ func _process(delta):
 	pass
 
 func _on_button_button_down():
-	drag = true
-	offset = get_global_mouse_position() - global_position
+	if Controlador.playerTurn == playerId and Controlador.fase == 2:
+		drag = true
+		offset = get_global_mouse_position() - global_position
 
 
 func _on_button_button_up():
