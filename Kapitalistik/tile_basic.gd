@@ -15,6 +15,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	#verifica quando o player é colocado no tile
 	if mouseReleaseObject:
 		if playerObject != null:

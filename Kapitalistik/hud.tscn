@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://4gf5qcq6dfva"]
+[gd_scene load_steps=7 format=3 uid="uid://4gf5qcq6dfva"]
 
 [ext_resource type="PackedScene" uid="uid://b0exb28ywc2d6" path="res://holder.tscn" id="1_316ti"]
 [ext_resource type="Script" path="res://hud.gd" id="1_dj65v"]
+[ext_resource type="Texture2D" uid="uid://b48wajgj4c3mq" path="res://avatar1.png" id="3_qiwir"]
+[ext_resource type="Texture2D" uid="uid://dp5fhuih56c1c" path="res://avatar2.png" id="4_y6fcc"]
+[ext_resource type="Texture2D" uid="uid://ddcmgeg2m8sbl" path="res://avatar (7).png" id="5_ao125"]
+[ext_resource type="Texture2D" uid="uid://clra1msx236eu" path="res://avatar (6).png" id="6_rjlxa"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_dj65v")
@@ -10,7 +14,7 @@ script = ExtResource("1_dj65v")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1024.0
+offset_left = 992.0
 offset_top = 144.0
 offset_bottom = -128.0
 grow_horizontal = 2
@@ -19,11 +23,56 @@ grow_vertical = 2
 [node name="Holder" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
 
+[node name="Icon" parent="VBoxContainer/Holder" index="0"]
+texture = ExtResource("3_qiwir")
+
+[node name="User" parent="VBoxContainer/Holder" index="1"]
+text = "Larissa
+"
+
+[node name="Saldo" parent="VBoxContainer/Holder" index="2"]
+text = "R$ 200,00
+"
+
 [node name="Holder2" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
+
+[node name="Icon" parent="VBoxContainer/Holder2" index="0"]
+texture = ExtResource("4_y6fcc")
+
+[node name="User" parent="VBoxContainer/Holder2" index="1"]
+text = "Paulo"
+
+[node name="Saldo" parent="VBoxContainer/Holder2" index="2"]
+text = "R$ 50,00
+"
 
 [node name="Holder3" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
 
+[node name="Icon" parent="VBoxContainer/Holder3" index="0"]
+texture = ExtResource("5_ao125")
+
+[node name="User" parent="VBoxContainer/Holder3" index="1"]
+text = "Natália"
+
+[node name="Saldo" parent="VBoxContainer/Holder3" index="2"]
+text = "R$ 3000,00
+"
+
 [node name="Holder4" parent="VBoxContainer" instance=ExtResource("1_316ti")]
 layout_mode = 2
+
+[node name="Icon" parent="VBoxContainer/Holder4" index="0"]
+texture = ExtResource("6_rjlxa")
+
+[node name="User" parent="VBoxContainer/Holder4" index="1"]
+text = "Murilo"
+
+[node name="Saldo" parent="VBoxContainer/Holder4" index="2"]
+text = "R$ 1500,00"
+
+[editable path="VBoxContainer/Holder"]
+[editable path="VBoxContainer/Holder2"]
+[editable path="VBoxContainer/Holder3"]
+[editable path="VBoxContainer/Holder4"]
