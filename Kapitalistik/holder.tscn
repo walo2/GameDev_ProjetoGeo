@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b0exb28ywc2d6"]
 
-[ext_resource type="Texture2D" uid="uid://brriqk7k0o0qa" path="res://avatar (10).png" id="1_sev2x"]
+[ext_resource type="Texture2D" path="res://avatar (10).png" id="1_sev2x"]
 
 [node name="Holder" type="Control"]
 layout_mode = 3
