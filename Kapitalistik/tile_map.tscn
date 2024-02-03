@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://yh26grf534pi"]
+
+[gd_scene load_steps=4 format=3 uid="uid://yh26grf534pi"]
 
 [ext_resource type="PackedScene" uid="uid://cg7sc7ox3xvm1" path="res://player_temp.tscn" id="1_mxqg4"]
 [ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
+[ext_resource type="PackedScene" uid="uid://4gf5qcq6dfva" path="res://hud.tscn" id="3_cv6os"]
 [ext_resource type="Script" path="res://TempPassTurn.gd" id="3_1mgao"]
 [ext_resource type="PackedScene" uid="uid://c6m3o6wg8xy8m" path="res://roleta.tscn" id="3_6dqb7"]
 
@@ -98,6 +100,10 @@ playerId = 3
 [node name="PlayerTemp4" parent="." instance=ExtResource("1_mxqg4")]
 position = Vector2(127, 57)
 colorPlayer = Color(0.996078, 0, 0.184314, 1)
+
+
+[node name="HUD" parent="." instance=ExtResource("3_cv6os")]
+
 playerId = 1
 
 [node name="TempPassTurn" type="Node2D" parent="."]
@@ -134,3 +140,4 @@ Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
 position = Vector2(804, 487)
 
 [connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
+

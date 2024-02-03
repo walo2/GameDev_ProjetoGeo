@@ -12,7 +12,7 @@ func _process(delta):
 
 
 func _on_iniciar_btn_pressed():
-	get_tree().change_scene_to_file("res://tile_map.tscn")
+	get_tree().change_scene_to_file("res://MenuPlayers.tscn")
 
 
 func _on_opcoes_btn_pressed():
