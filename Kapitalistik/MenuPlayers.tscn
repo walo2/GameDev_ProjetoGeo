@@ -164,7 +164,8 @@ theme_override_font_sizes/font_size = 31
 theme_override_styles/normal = SubResource("StyleBoxTexture_omx7l")
 text = "Selecione a quantidade de jogadores:"
 horizontal_alignment = 1
-visible_ratio = -0.0277778
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="LineEdit" type="LineEdit" parent="."]
 layout_mode = 0
@@ -198,3 +199,7 @@ offset_top = 480.0
 offset_right = 725.0
 offset_bottom = 536.0
 text = "Digite o nome do 3° jogador:"
+
+[connection signal="pressed" from="Background/2Players" to="." method="_on_players_pressed"]
+[connection signal="pressed" from="Background/3Players" to="." method="_on_players_pressed"]
+[connection signal="pressed" from="Background/4Players" to="." method="_on_players_pressed"]
