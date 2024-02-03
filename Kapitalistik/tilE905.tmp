@@ -1,0 +1,134 @@
+[gd_scene load_steps=4 format=3 uid="uid://yh26grf534pi"]
+
+[ext_resource type="PackedScene" uid="uid://cg7sc7ox3xvm1" path="res://player_temp.tscn" id="1_mxqg4"]
+[ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
+[ext_resource type="PackedScene" uid="uid://c6m3o6wg8xy8m" path="res://roleta.tscn" id="3_6dqb7"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="TileTipe1 - 1" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(114, 167)
+colorTile = Color(1, 1, 1, 1)
+
+[node name="TileTipe1 - 2" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(151, 62)
+
+[node name="TileTipe1 - 3" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(256, 58)
+
+[node name="TileTipe1 - 4" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(379, 57)
+colorTile = Color(1, 0, 1, 1)
+
+[node name="TileTipe1 - 5" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(486, 60)
+
+[node name="TileTipe1 - 6" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(582, 59)
+
+[node name="TileTipe1 - 7" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(676, 62)
+
+[node name="TileTipe1 - 8" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(744, 95)
+
+[node name="TileTipe1 - 9" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(430, 237)
+
+[node name="TileTipe1 - 10" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(412, 147)
+
+[node name="TileTipe1 - 11" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(509, 249)
+
+[node name="TileTipe1 - 12" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(580, 255)
+
+[node name="TileTipe1 - 13" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(684, 261)
+
+[node name="TileTipe1 - 14" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(777, 242)
+
+[node name="TileTipe1 - 15" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(823, 110)
+
+[node name="TileTipe1 - 16" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(849, 180)
+
+[node name="TileTipe1 - 17" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(861, 261)
+colorTile = Color(1, 0, 1, 1)
+
+[node name="TileTipe1 - 18" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(929, 416)
+
+[node name="TileTipe1 - 19" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(789, 528)
+
+[node name="TileTipe1 - 20" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(683, 382)
+
+[node name="TileTipe1 - 21" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(598, 407)
+
+[node name="TileTipe1 - 22" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(913, 331)
+
+[node name="TileTipe1 - 23" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(839, 341)
+
+[node name="TileTipe1 - 24" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(762, 365)
+
+[node name="TileTipe1 - 25" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(870, 480)
+
+[node name="TileTipe1 - 26" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(705, 562)
+
+[node name="TileTipe1 - 27" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(603, 576)
+
+[node name="TileTipe1 - 28" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(462, 582)
+
+[node name="TileTipe1 - 29" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(519, 434)
+
+[node name="TileTipe1 - 30" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(445, 485)
+
+[node name="TileTipe1 - 31" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(357, 528)
+colorTile = Color(1, 0, 1, 1)
+
+[node name="TileTipe1 - 32" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(243, 500)
+
+[node name="TileTipe1 - 33" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(123, 305)
+
+[node name="TileTipe1 - 34" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(166, 428)
+
+[node name="PlayerTemp" parent="." instance=ExtResource("1_mxqg4")]
+position = Vector2(259, 246)
+colorPlayer = Color(0, 0, 1, 1)
+
+[node name="PlayerTemp2" parent="." instance=ExtResource("1_mxqg4")]
+position = Vector2(244, 170)
+colorPlayer = Color(1, 1, 0, 1)
+
+[node name="PlayerTemp3" parent="." instance=ExtResource("1_mxqg4")]
+position = Vector2(308, 277)
+colorPlayer = Color(0, 1, 1, 1)
+
+[node name="PlayerTemp4" parent="." instance=ExtResource("1_mxqg4")]
+position = Vector2(298, 199)
+colorPlayer = Color(0.996078, 0, 0.184314, 1)
+
+[node name="Roleta" parent="." instance=ExtResource("3_6dqb7")]
+position = Vector2(1022, 111)
