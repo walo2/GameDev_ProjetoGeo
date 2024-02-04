@@ -1,6 +1,7 @@
 extends Node2D
 
-var seta
+@onready var seta = $Seta
+
 var rodar = false
 var parar = false
 var sorteado = 4
@@ -14,7 +15,6 @@ var meiaVoltas
  
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	seta = get_node("Seta")
 	pass # Replace with function body.
 
 
@@ -45,15 +45,24 @@ func _process(delta):
 
 
 func sortearNumero():
-	voltas = (1 + randi()%5)*2
-	sorteado = randi()%4+1
-	pararNumero = (sorteado-1) * 90 
-	parar = false
-	rodar = true
-	acelerar = true
-	desacelerar = false
-	meiaVoltas = int(voltas/2)
-	velocidade = 0
+	if Controlador.fase == 1:
+		voltas = (1 + randi()%5)*2
+		sorteado = (randi()%6) + 1
+		if sorteado == 2:
+			pararNumero = 60
+		elif sorteado == 5:
+			pararNumero = 220
+		else:
+			pararNumero = (sorteado-1) * 60 
+		parar = false
+		rodar = true
+		acelerar = true
+		desacelerar = false
+		meiaVoltas = int(voltas/2)
+		velocidade = 0
+		
+		Controlador.proximaFase()
+		Controlador.numeroRoleta(sorteado)
 	return sorteado
 
 

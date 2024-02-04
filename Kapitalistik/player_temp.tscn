@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://player_temp.gd" id="1_4ikpa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wc8ab"]
-size = Vector2(40, 40)
+size = Vector2(38, 38)
 
 [node name="PlayerTemp" type="Node2D"]
 z_index = 1
@@ -63,3 +63,5 @@ shape = SubResource("RectangleShape2D_wc8ab")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="area_shape_exited" from="Area2D" to="." method="_on_area_2d_area_shape_exited"]
