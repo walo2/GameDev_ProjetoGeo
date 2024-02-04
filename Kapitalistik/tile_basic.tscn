@@ -1,14 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://dymwkq732leqf"]
+[gd_scene load_steps=4 format=3 uid="uid://dymwkq732leqf"]
 
 [ext_resource type="Script" path="res://tile_basic.gd" id="1_i3ggq"]
+[ext_resource type="Material" uid="uid://dosn66orqwctd" path="res://outLine.tres" id="2_alpne"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kknlp"]
-size = Vector2(40, 40)
+size = Vector2(35, 36)
 
 [node name="TileBasic" type="Node2D"]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_i3ggq")
 colorTile = Color(0.156863, 0.588235, 0.717647, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
@@ -22,6 +37,12 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+material = ExtResource("2_alpne")
+scale = Vector2(0.13, 0.13)
 
 [node name="Area2D" type="Area2D" parent="."]
 

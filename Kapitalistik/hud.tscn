@@ -14,9 +14,10 @@ script = ExtResource("1_dj65v")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 992.0
-offset_top = 144.0
-offset_bottom = -128.0
+offset_left = 994.0
+offset_top = 270.0
+offset_right = 2.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 
