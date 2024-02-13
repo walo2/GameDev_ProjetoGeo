@@ -167,39 +167,43 @@ horizontal_alignment = 1
 visible_characters = 0
 visible_ratio = 0.0
 
-[node name="LineEdit" type="LineEdit" parent="."]
-layout_mode = 0
-offset_left = 424.0
-offset_top = 400.0
-offset_right = 723.0
-offset_bottom = 456.0
-text = "Digite o nome do 2° jogador:"
-
-[node name="LineEdit2" type="LineEdit" parent="."]
+[node name="Player1_name" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 424.0
 offset_top = 320.0
 offset_right = 723.0
 offset_bottom = 376.0
 theme = SubResource("Theme_crdnb")
-text = "Digite o nome do 1° jogador:"
+placeholder_text = "Digite o nome do 1° jogador:"
 
-[node name="LineEdit3" type="LineEdit" parent="."]
+[node name="Player2_name" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 424.0
-offset_top = 560.0
+offset_top = 400.0
 offset_right = 723.0
-offset_bottom = 616.0
-text = "Digite o nome do 4° jogador:"
+offset_bottom = 456.0
+placeholder_text = "Digite o nome do 2° jogador:"
 
-[node name="LineEdit4" type="LineEdit" parent="."]
+[node name="Player3_name" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 426.0
 offset_top = 480.0
 offset_right = 725.0
 offset_bottom = 536.0
-text = "Digite o nome do 3° jogador:"
+placeholder_text = "Digite o nome do 3° jogador:"
 
-[connection signal="pressed" from="Background/2Players" to="." method="_on_players_pressed"]
-[connection signal="pressed" from="Background/3Players" to="." method="_on_players_pressed"]
-[connection signal="pressed" from="Background/4Players" to="." method="_on_players_pressed"]
+[node name="Player4_name" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 560.0
+offset_right = 723.0
+offset_bottom = 616.0
+placeholder_text = "Digite o nome do 4° jogador:"
+
+[connection signal="pressed" from="Background/2Players" to="." method="_on_2players_pressed"]
+[connection signal="pressed" from="Background/3Players" to="." method="_on_4players_pressed"]
+[connection signal="pressed" from="Background/4Players" to="." method="_on_3players_pressed"]
+[connection signal="text_changed" from="Player1_name" to="." method="_on_player_1_name_text_changed"]
+[connection signal="text_changed" from="Player2_name" to="." method="_on_player_2_name_text_changed"]
+[connection signal="text_changed" from="Player3_name" to="." method="_on_player_3_name_text_changed"]
+[connection signal="text_changed" from="Player4_name" to="." method="_on_player_4_name_text_changed"]
