@@ -1,118 +1,117 @@
-[gd_scene load_steps=2 format=3 uid="uid://yh26grf534pi"]
+[gd_scene load_steps=8 format=3 uid="uid://yh26grf534pi"]
 
+[ext_resource type="Script" path="res://tile_map.gd" id="1_ju23k"]
 [ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
+[ext_resource type="Script" path="res://TempPassTurn.gd" id="3_1mgao"]
+[ext_resource type="PackedScene" uid="uid://c6m3o6wg8xy8m" path="res://roleta.tscn" id="3_6dqb7"]
+[ext_resource type="PackedScene" uid="uid://4gf5qcq6dfva" path="res://hud.tscn" id="3_cv6os"]
+[ext_resource type="Texture2D" uid="uid://d1gst4cmw2dhq" path="res://Imgs/fundo.png" id="6_b3j5h"]
+[ext_resource type="PackedScene" uid="uid://canhksr8hack8" path="res://roleta2.tscn" id="6_ptkt8"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_ju23k")
 
 [node name="Tiles" type="Node2D" parent="."]
 
-[node name="Tile 1" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(128, 206)
+[node name="Tile 01" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(36, 181)
 colorTile = Color(1, 1, 1, 1)
+idNumero = 1
 
-[node name="Tile 2" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(199, 205)
+[node name="Tile 02" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(109, 176)
+idNumero = 2
 
-[node name="Tile 3" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(270, 204)
+[node name="Tile 03" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(197, 175)
+idNumero = 3
 
-[node name="Tile 4D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(337, 133)
+[node name="Tile 04D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(262, 100)
 colorTile = Color(1, 0, 1, 1)
+idNumero = 4
 
-[node name="Tile 5D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(378, 67)
+[node name="Tile 05D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(334, 37)
+idNumero = 5
 
-[node name="Tile 6D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(454, 67)
+[node name="Tile 06D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(405, 37)
+idNumero = 6
 
-[node name="Tile 7D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(525, 131)
+[node name="Tile 07D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(478, 97)
+idNumero = 7
 
-[node name="Tile 4F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(332, 274)
+[node name="Tile 04F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(262, 247)
+idNumero = 4
 
-[node name="Tile 5F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(382, 344)
+[node name="Tile 05F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(334, 309)
 colorTile = Color(1, 0, 1, 1)
+idNumero = 5
 
-[node name="Tile 6F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(448, 344)
+[node name="Tile 06F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(405, 309)
+idNumero = 6
 
-[node name="Tile 7F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(521, 279)
+[node name="Tile 07F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(478, 249)
+idNumero = 7
 
-[node name="Tile 8" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(568, 205)
+[node name="Tile 08" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(549, 170)
+idNumero = 8
 
-[node name="Tile 9D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(609, 281)
+[node name="Tile 09D" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(623, 249)
+idNumero = 9
 
 [node name="Tile 10D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(682, 343)
+position = Vector2(694, 310)
+idNumero = 10
 
 [node name="Tile 11D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(754, 341)
+position = Vector2(765, 310)
+idNumero = 11
 
 [node name="Tile 12D" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(829, 279)
+position = Vector2(836, 240)
+idNumero = 12
 
-[node name="Tile 9F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(611, 132)
+[node name="Tile 09F" parent="Tiles" instance=ExtResource("2_ix8bo")]
+position = Vector2(623, 99)
+idNumero = 9
 
 [node name="Tile 10F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(691, 70)
+position = Vector2(694, 36)
+idNumero = 10
 
 [node name="Tile 11F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(763, 71)
+position = Vector2(765, 36)
+idNumero = 11
 
 [node name="Tile 12F" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(836, 129)
+position = Vector2(836, 102)
+idNumero = 12
 
 [node name="Tile 13" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(905, 203)
+position = Vector2(910, 167)
+idNumero = 13
 
 [node name="Tile 14" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(973, 203)
+position = Vector2(983, 167)
+idNumero = 14
 
-<<<<<<< Updated upstream
-[node name="TileTipe1 - 31" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(357, 528)
-colorTile = Color(1, 0, 1, 1)
-
-[node name="TileTipe1 - 32" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(243, 500)
-
-[node name="TileTipe1 - 33" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(123, 305)
-
-[node name="TileTipe1 - 34" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(166, 428)
-=======
 [node name="Tile 15" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(1041, 203)
+position = Vector2(1057, 167)
+idNumero = 15
 
-[node name="PlayerTemp" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(31, 229)
-colorPlayer = Color(0, 0, 1, 1)
-playerId = 2
-
-[node name="PlayerTemp2" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(33.9999, 180)
-colorPlayer = Color(1, 1, 0, 1)
-
-[node name="PlayerTemp3" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(70.9999, 229)
-colorPlayer = Color(0, 1, 1, 1)
-playerId = 3
-
-[node name="PlayerTemp4" parent="." instance=ExtResource("1_mxqg4")]
-position = Vector2(70, 182)
-colorPlayer = Color(0.996078, 0, 0.184314, 1)
-playerId = 1
+[node name="HUD" parent="." instance=ExtResource("3_cv6os")]
 
 [node name="TempPassTurn" type="Node2D" parent="."]
-position = Vector2(936, 550)
+position = Vector2(281, 554)
 script = ExtResource("3_1mgao")
 
 [node name="ColorRect" type="ColorRect" parent="TempPassTurn"]
@@ -127,22 +126,47 @@ text = "Passar o turno"
 metadata/_edit_lock_ = true
 
 [node name="TextEdit" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = -424.0
-offset_top = -196.0
-offset_right = -266.0
-offset_bottom = -83.0
+offset_left = -1.0
+offset_top = -66.0
+offset_right = 213.0
+offset_bottom = -30.0
+theme_override_colors/default_color = Color(0.564706, 0.737255, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/normal_font_size = 26
+text = "Turno: 0, Fase: 1"
 
 [node name="TextEdit2" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = -10.0
-offset_top = -146.0
-offset_right = 173.0
-offset_bottom = 16.0
+offset_left = 1.0
+offset_top = -187.0
+offset_right = 247.0
+offset_bottom = -81.0
+theme_override_colors/default_color = Color(0.054902, 1, 0.972549, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/normal_font_size = 18
 text = "Temp: 
 Turno: diferentes jogadores
 Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
 
 [node name="Roleta" parent="." instance=ExtResource("3_6dqb7")]
-position = Vector2(803, 497)
+visible = false
+position = Vector2(607, 474)
+
+[node name="Roleta2" parent="." instance=ExtResource("6_ptkt8")]
+position = Vector2(199, 464)
+
+[node name="Fundo" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(576, 329.5)
+scale = Vector2(1.00868, 1.03241)
+texture = ExtResource("6_b3j5h")
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
->>>>>>> Stashed changes
