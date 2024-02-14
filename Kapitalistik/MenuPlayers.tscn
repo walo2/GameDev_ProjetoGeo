@@ -200,6 +200,21 @@ offset_right = 723.0
 offset_bottom = 616.0
 placeholder_text = "Digite o nome do 4° jogador:"
 
+[node name="Enter" type="Button" parent="."]
+top_level = true
+layout_mode = 2
+offset_left = 953.0
+offset_top = 561.0
+offset_right = 1069.0
+offset_bottom = 610.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_nl0wd")
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "Enter
+"
+
 [connection signal="pressed" from="Background/2Players" to="." method="_on_2players_pressed"]
 [connection signal="pressed" from="Background/3Players" to="." method="_on_4players_pressed"]
 [connection signal="pressed" from="Background/4Players" to="." method="_on_3players_pressed"]
@@ -207,3 +222,5 @@ placeholder_text = "Digite o nome do 4° jogador:"
 [connection signal="text_changed" from="Player2_name" to="." method="_on_player_2_name_text_changed"]
 [connection signal="text_changed" from="Player3_name" to="." method="_on_player_3_name_text_changed"]
 [connection signal="text_changed" from="Player4_name" to="." method="_on_player_4_name_text_changed"]
+[connection signal="pressed" from="Enter" to="." method="_on_enter_pressed"]
+[connection signal="pressed" from="Enter" to="." method="_on_4players_pressed"]
