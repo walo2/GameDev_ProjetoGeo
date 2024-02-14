@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://yh26grf534pi"]
 
-[ext_resource type="Script" path="res://tile_map.gd" id="1_ju23k"]
-[ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://tile_basic.tscn" id="2_ix8bo"]
+[ext_resource type="Script" path="res://Tiles/tile_map.gd" id="1_ju23k"]
+[ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://Tiles/tile_basic.tscn" id="2_ix8bo"]
 [ext_resource type="Script" path="res://TempPassTurn.gd" id="3_1mgao"]
 [ext_resource type="PackedScene" uid="uid://c6m3o6wg8xy8m" path="res://roleta.tscn" id="3_6dqb7"]
 [ext_resource type="PackedScene" uid="uid://4gf5qcq6dfva" path="res://hud.tscn" id="3_cv6os"]
@@ -14,16 +14,16 @@ script = ExtResource("1_ju23k")
 [node name="Tiles" type="Node2D" parent="."]
 
 [node name="Tile 01" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(36, 181)
+position = Vector2(37, 189)
 colorTile = Color(1, 1, 1, 1)
 idNumero = 1
 
 [node name="Tile 02" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(109, 176)
+position = Vector2(110, 184)
 idNumero = 2
 
 [node name="Tile 03" parent="Tiles" instance=ExtResource("2_ix8bo")]
-position = Vector2(197, 175)
+position = Vector2(198, 183)
 idNumero = 3
 
 [node name="Tile 04D" parent="Tiles" instance=ExtResource("2_ix8bo")]

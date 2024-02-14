@@ -21,13 +21,13 @@ func _on_2players_pressed():
 func _on_3players_pressed():
 	num_players_selected = 3
 	GlobalData.set_num_players(num_players_selected)
-	get_tree().change_scene_to_file("res://tile_map.tscn")
+	get_tree().change_scene_to_file("res://Tiles/tile_map.tscn")
 
 
 func _on_4players_pressed():
 	num_players_selected = 4
 	GlobalData.set_num_players(num_players_selected)
-	get_tree().change_scene_to_file("res://tile_map.tscn")
+	get_tree().change_scene_to_file("res://Tiles/tile_map.tscn")
 	
 
 func get_player_name(playerID):

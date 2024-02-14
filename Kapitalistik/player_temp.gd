@@ -10,7 +10,9 @@ var noTile = true
 @onready var area2D = $Area2D
 
 @export var colorPlayer : Color
-@export var playerId = 0
+@export var playerId : int = 0
+@export var caminho = 0 #1 = diamante, 2 = ferro
+@export var player_name = "player"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,6 +20,7 @@ func _ready():
 	Controlador.TileInicial.inicioJogo(self)
 	posicaoInicial = position
 	pass # Replace with function body.
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

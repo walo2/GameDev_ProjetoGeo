@@ -17,6 +17,11 @@ func _process(delta):
 func instantiate_players():
 	for i in GlobalData.num_players:
 		var new_player = players.instantiate()
-		new_player.name = GlobalData.player_names[i]
+		new_player.player_name = GlobalData.player_names[i]
+		new_player.playerId = i
+		if (i == 0 || i == 2):
+			new_player.caminho = 1
+		else:
+			new_player.caminho = 2
 		add_child(new_player)
-		print("player ", i, " - ", new_player.name, " criado")
+		print(new_player.player_name, ", id: ", new_player.playerId, ", caminho: ", new_player.caminho)
