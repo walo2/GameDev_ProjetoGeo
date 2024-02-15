@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://c2ywgxeig0yn2" path="res://default_btn.tres" id="1_a1oif"]
 [ext_resource type="Script" path="res://menu.gd" id="1_cux3h"]
-[ext_resource type="Texture2D" uid="uid://bi3wiyjghopn" path="res://Imgs/capaDoJogo.jpeg" id="2_pba6g"]
+[ext_resource type="Texture2D" uid="uid://bujo4v7dmn10t" path="res://Imgs/capaDoJogo.png" id="2_7pgki"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,6 +23,7 @@ offset_left = -11.0
 offset_top = -23.0
 offset_right = 1177.0
 offset_bottom = 661.0
+color = Color(0, 0.0784314, 0.462745, 1)
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 2
@@ -32,7 +33,7 @@ offset_right = 1163.0
 offset_bottom = 410.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_pba6g")
+texture = ExtResource("2_7pgki")
 expand_mode = 1
 stretch_mode = 5
 
