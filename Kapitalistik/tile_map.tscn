@@ -15,103 +15,123 @@ script = ExtResource("1_ju23k")
 
 [node name="Tile 01" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(36, 181)
-colorTile = Color(1, 1, 1, 1)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 1
 
 [node name="Tile 02" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(109, 176)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 2
 
 [node name="Tile 03" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(197, 175)
+colorTile = Color(1, 0, 0, 1)
 idNumero = 3
 
 [node name="Tile 04D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(262, 100)
-colorTile = Color(1, 0, 1, 1)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 4
 
 [node name="Tile 05D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(334, 37)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 5
 
 [node name="Tile 06D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(405, 37)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 6
 
 [node name="Tile 07D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(478, 97)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 7
 
 [node name="Tile 04F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(262, 247)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 4
 
 [node name="Tile 05F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(334, 309)
-colorTile = Color(1, 0, 1, 1)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 5
 
 [node name="Tile 06F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(405, 309)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 6
 
 [node name="Tile 07F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(478, 249)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 7
 
 [node name="Tile 08" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(549, 170)
+colorTile = Color(1, 0, 0, 1)
 idNumero = 8
 
 [node name="Tile 09D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(623, 249)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 9
 
 [node name="Tile 10D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(694, 310)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 10
 
 [node name="Tile 11D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(765, 310)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 11
 
 [node name="Tile 12D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(836, 240)
+colorTile = Color(1, 0, 0, 1)
 idNumero = 12
 
 [node name="Tile 09F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(623, 99)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 9
 
 [node name="Tile 10F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(694, 36)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 10
 
 [node name="Tile 11F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(765, 36)
+colorTile = Color(0.917647, 0.6, 0.6, 1)
 idNumero = 11
 
 [node name="Tile 12F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(836, 102)
+colorTile = Color(1, 0, 0, 1)
 idNumero = 12
 
 [node name="Tile 13" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(910, 167)
+colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 13
 
 [node name="Tile 14" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(983, 167)
+colorTile = Color(0.8, 0, 0, 1)
 idNumero = 14
 
 [node name="Tile 15" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(1057, 167)
+colorTile = Color(0.6, 0, 0, 1)
 idNumero = 15
 
 [node name="HUD" parent="." instance=ExtResource("3_cv6os")]
 
 [node name="TempPassTurn" type="Node2D" parent="."]
-position = Vector2(281, 554)
+position = Vector2(291, 603)
 script = ExtResource("3_1mgao")
 
 [node name="ColorRect" type="ColorRect" parent="TempPassTurn"]
@@ -126,41 +146,40 @@ text = "Passar o turno"
 metadata/_edit_lock_ = true
 
 [node name="TextEdit" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = -1.0
-offset_top = -66.0
-offset_right = 213.0
-offset_bottom = -30.0
-theme_override_colors/default_color = Color(0.564706, 0.737255, 1, 1)
+offset_top = -67.0
+offset_right = 268.0
+offset_bottom = -19.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
-theme_override_constants/outline_size = 12
-theme_override_font_sizes/normal_font_size = 26
-text = "Turno: 0, Fase: 1"
+theme_override_constants/outline_size = 22
+theme_override_font_sizes/normal_font_size = 30
+text = " Turno: 0, Fase: 1"
 
 [node name="TextEdit2" type="RichTextLabel" parent="TempPassTurn"]
-offset_left = 1.0
-offset_top = -187.0
-offset_right = 247.0
-offset_bottom = -81.0
-theme_override_colors/default_color = Color(0.054902, 1, 0.972549, 1)
+offset_left = -3.0
+offset_top = -219.0
+offset_right = 509.0
+offset_bottom = -84.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/shadow_outline_size = 2
-theme_override_constants/outline_size = 3
-theme_override_font_sizes/normal_font_size = 18
-text = "Temp: 
-Turno: diferentes jogadores
-Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
+theme_override_constants/outline_size = 22
+theme_override_font_sizes/normal_font_size = 26
+text = " Temporario: 
+ Turno: diferentes jogadores
+ Fase: 0 inicial, 1 roleta, 2 mover, 3 final"
 
 [node name="Roleta" parent="." instance=ExtResource("3_6dqb7")]
 visible = false
 position = Vector2(607, 474)
 
 [node name="Roleta2" parent="." instance=ExtResource("6_ptkt8")]
-position = Vector2(199, 464)
+position = Vector2(159, 477)
 
 [node name="Fundo" type="Sprite2D" parent="."]
 z_index = -2
