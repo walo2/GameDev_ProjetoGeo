@@ -63,4 +63,4 @@ func _on_player_4_name_text_changed(new_text):
 
 
 func _on_enter_pressed():
-	get_tree().change_scene_to_file("res://tile_map.tscn")
+	get_tree().change_scene_to_file("res://Tiles/tile_map.tscn")
