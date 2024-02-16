@@ -17,7 +17,6 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Controlador="*res://Controlador.gd"
 GlobalData="*res://singleton/global_data.gd"
 Action="*res://action.gd"
 

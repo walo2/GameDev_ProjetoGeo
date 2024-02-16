@@ -7,6 +7,7 @@ var players = preload("res://player_temp.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	instantiate_players()
+	Action.t1_inicio()
 	pass # Replace with function body.
 
 

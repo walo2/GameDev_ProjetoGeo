@@ -9,11 +9,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	texto.text = "Turno: " + str(Controlador.playerTurn) + ", Fase: " + str(Controlador.fase) 
+	texto.text = "Turno: " + str(GlobalData.playerTurn) + ", Fase: " + str(GlobalData.fase) 
 	pass
 
 
 func _on_button_pressed():
-	Controlador.proximaFase()
+	GlobalData.proximaFase()
 	pass # Replace with function body.
 

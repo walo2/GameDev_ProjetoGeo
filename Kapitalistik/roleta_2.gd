@@ -45,15 +45,10 @@ func _process(delta):
 
 
 func sortearNumero():
-	if Controlador.fase == 1:
+	if GlobalData.fase == 1:
 		voltas = (1 + randi()%5)*2
 		sorteado = (randi()%6) + 1
-		if sorteado == 2:
-			pararNumero = 60
-		elif sorteado == 5:
-			pararNumero = 220
-		else:
-			pararNumero = (sorteado-1) * 60 
+		pararNumero = (sorteado-1) * 60 
 		parar = false
 		rodar = true
 		acelerar = true
@@ -61,8 +56,8 @@ func sortearNumero():
 		meiaVoltas = int(voltas/2)
 		velocidade = 0
 		
-		Controlador.proximaFase()
-		Controlador.numeroRoleta(sorteado)
+		GlobalData.proximaFase()
+		GlobalData.numeroRoleta(sorteado)
 	return sorteado
 
 

@@ -24,12 +24,12 @@ colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 2
 
 [node name="Tile 03" parent="Tiles" instance=ExtResource("2_pbm8h")]
-position = Vector2(197, 175)
+position = Vector2(204, 175)
 colorTile = Color(1, 0, 0, 1)
 idNumero = 3
 
 [node name="Tile 04D" parent="Tiles" instance=ExtResource("2_pbm8h")]
-position = Vector2(262, 100)
+position = Vector2(255, 94)
 colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 4
 
@@ -49,7 +49,7 @@ colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 7
 
 [node name="Tile 04F" parent="Tiles" instance=ExtResource("2_pbm8h")]
-position = Vector2(262, 247)
+position = Vector2(255, 254)
 colorTile = Color(0.878431, 0.4, 0.4, 1)
 idNumero = 4
 
@@ -156,7 +156,7 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_constants/outline_size = 22
 theme_override_font_sizes/normal_font_size = 30
-text = " Turno: 0, Fase: 1"
+text = "  Turno: 0, Fase: 1"
 
 [node name="TextEdit2" type="RichTextLabel" parent="TempPassTurn"]
 offset_left = -3.0
@@ -179,13 +179,46 @@ visible = false
 position = Vector2(607, 474)
 
 [node name="Roleta2" parent="." instance=ExtResource("6_537qa")]
-position = Vector2(159, 477)
+position = Vector2(149, 523)
 
 [node name="Fundo" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.6)
 z_index = -2
 position = Vector2(576, 329.5)
 scale = Vector2(1.00868, 1.03241)
 texture = ExtResource("7_11wgl")
 metadata/_edit_lock_ = true
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+offset_top = 283.0
+offset_right = 277.0
+offset_bottom = 422.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/outline_size = 22
+theme_override_font_sizes/normal_font_size = 27
+text = " BC: pula turno atual
+ BE: volta 2 e pula 
+ o proximo turno"
+
+[node name="TextEdit2" type="RichTextLabel" parent="."]
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 223.0
+offset_bottom = 149.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/outline_size = 22
+theme_override_font_sizes/normal_font_size = 20
+text = " Ao chegar na ultima 
+ casa o proximo 
+ movimento volta 
+ para casa 1"
 
 [connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
