@@ -18,5 +18,6 @@ func instantiate_players():
 	for i in GlobalData.num_players:
 		var new_player = players.instantiate()
 		new_player.name = GlobalData.player_names[i]
+		new_player.playerId = i
 		add_child(new_player)
-		print("player ", i, " - ", new_player.name, " criado")
+		print("player ", new_player.playerId, " - ", new_player.name, " criado")
