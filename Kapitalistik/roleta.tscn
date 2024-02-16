@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6m3o6wg8xy8m"]
 
-[ext_resource type="Texture2D" uid="uid://cy3o1m5uke2iu" path="res://Imgs/RoletaTemp.png" id="2_xr44w"]
+[ext_resource type="Texture2D" uid="uid://480fhpn2fjyu" path="res://Imgs/roleta1.png" id="1_fcv45"]
 [ext_resource type="Texture2D" uid="uid://bc3jmjh08ws02" path="res://Imgs/SetaTemp.png" id="3_lbenc"]
 [ext_resource type="Texture2D" uid="uid://br0fjvamsyuwg" path="res://Imgs/botaoTemp.png" id="3_rxmkt"]
 
@@ -74,8 +74,8 @@ func _on_button_pressed():
 script = SubResource("GDScript_oly7v")
 
 [node name="Fundo" type="Sprite2D" parent="."]
-scale = Vector2(1.2, 1.2)
-texture = ExtResource("2_xr44w")
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_fcv45")
 
 [node name="Button" type="Button" parent="."]
 offset_left = -14.0

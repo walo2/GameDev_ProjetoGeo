@@ -2,6 +2,7 @@ extends Node
 
 @export var num_players = 2
 @export var player_names = ["1", "2", "3", "4"]
+@export var player_money = [0, 0, 0, 0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
