@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv4hgs33ldnl3"]
+
+[ext_resource type="PackedScene" uid="uid://dymwkq732leqf" path="res://Tiles/tile_basic.tscn" id="1_st3n4"]
+[ext_resource type="Script" path="res://Tiles/tile_inicial.gd" id="2_0kc18"]
+
+[node name="TileInicial" instance=ExtResource("1_st3n4")]
+script = ExtResource("2_0kc18")

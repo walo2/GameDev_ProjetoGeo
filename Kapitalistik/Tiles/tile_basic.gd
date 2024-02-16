@@ -1,5 +1,7 @@
 extends Node2D
 
+class_name TileBasic
+
 var playerObject = null
 var mouseReleaseObject = true
 var iniciou = false
@@ -10,7 +12,6 @@ var tileCerto = false
 @onready var sprite = $Sprite2D
 @onready var bdColor = $ColorRect
 @onready var bdOutLineColor = $ColorRect2
-
 
 @export var colorTile : Color
 @export var idNumero : int
@@ -74,6 +75,10 @@ func playersPosition():
 func inicioJogo(playerObIni):
 	playersOnTile.append(playerObIni)
 	playersPosition()
+	
+#Método que executa a ação de cada casa. Passa um objeto do tipo PlayerTemp
+func action(player):
+	pass
 
 func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	if Controlador.fase == 2:

@@ -1,5 +1,6 @@
 extends Node2D
 
+class_name PlayerTemp
 
 var drag = false
 var offset = Vector2(0,0)
@@ -13,6 +14,7 @@ var noTile = true
 @export var playerId : int = 0
 @export var caminho = 0 #1 = diamante, 2 = ferro
 @export var player_name = "player"
+@export var money = 50
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -54,3 +56,11 @@ func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shap
 func _on_area_2d_area_shape_exited(area_rid, area, area_shape_index, local_shape_index):
 	noTile = false
 	pass # Replace with function body.
+
+func add_money(value):
+	money += value
+	GlobalData.player_money[playerId] = money
+	
+func sub_money(value):
+	money -= value
+	GlobalData.player_money[playerId] = money

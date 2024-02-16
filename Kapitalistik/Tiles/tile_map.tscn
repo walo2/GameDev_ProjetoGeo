@@ -15,98 +15,72 @@ script = ExtResource("1_ju23k")
 
 [node name="Tile 01" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(37, 189)
-colorTile = Color(1, 1, 1, 1)
-idNumero = 1
 
 [node name="Tile 02" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(110, 184)
-idNumero = 2
 
 [node name="Tile 03" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(198, 183)
-idNumero = 3
 
 [node name="Tile 04D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(262, 100)
-colorTile = Color(1, 0, 1, 1)
-idNumero = 4
 
 [node name="Tile 05D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(334, 37)
-idNumero = 5
 
 [node name="Tile 06D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(405, 37)
-idNumero = 6
 
 [node name="Tile 07D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(478, 97)
-idNumero = 7
 
 [node name="Tile 04F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(262, 247)
-idNumero = 4
 
 [node name="Tile 05F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(334, 309)
-colorTile = Color(1, 0, 1, 1)
-idNumero = 5
 
 [node name="Tile 06F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(405, 309)
-idNumero = 6
 
 [node name="Tile 07F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(478, 249)
-idNumero = 7
 
 [node name="Tile 08" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(549, 170)
-idNumero = 8
 
 [node name="Tile 09D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(623, 249)
-idNumero = 9
 
 [node name="Tile 10D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(694, 310)
-idNumero = 10
 
 [node name="Tile 11D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(765, 310)
-idNumero = 11
 
 [node name="Tile 12D" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(836, 240)
-idNumero = 12
 
 [node name="Tile 09F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(623, 99)
-idNumero = 9
 
 [node name="Tile 10F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(694, 36)
-idNumero = 10
 
 [node name="Tile 11F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(765, 36)
-idNumero = 11
 
 [node name="Tile 12F" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(836, 102)
-idNumero = 12
 
 [node name="Tile 13" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(910, 167)
-idNumero = 13
 
 [node name="Tile 14" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(983, 167)
-idNumero = 14
 
 [node name="Tile 15" parent="Tiles" instance=ExtResource("2_ix8bo")]
 position = Vector2(1057, 167)
-idNumero = 15
 
 [node name="HUD" parent="." instance=ExtResource("3_cv6os")]
 
@@ -170,3 +144,5 @@ texture = ExtResource("6_b3j5h")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="TempPassTurn/Button" to="TempPassTurn" method="_on_button_pressed"]
+
+[editable path="Tiles/Tile 03"]

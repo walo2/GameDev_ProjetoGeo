@@ -23,5 +23,5 @@ func instantiate_players():
 			new_player.caminho = 1
 		else:
 			new_player.caminho = 2
-		add_child(new_player)
+		self.add_child(new_player)
 		print(new_player.player_name, ", id: ", new_player.playerId, ", caminho: ", new_player.caminho)
