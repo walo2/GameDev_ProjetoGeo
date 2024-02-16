@@ -18,11 +18,14 @@ func _ready():
 		holder[i].visible = true
 		
 	update_data()
+	update_imagem()
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	update_data()
+	if GlobalData.updatePlayerImagem == true:
+		update_imagem()
 
 func update_data():
 	$VBoxContainer/Holder/User.text = GlobalData.player_names[0]
@@ -36,3 +39,9 @@ func update_data():
 	
 	$VBoxContainer/Holder4/User.text = GlobalData.player_names[3]
 	$VBoxContainer/Holder4/Saldo.text = "R$ " + str(GlobalData.player_money[3])
+
+func update_imagem():
+	$VBoxContainer/Holder/Icon.texture = GlobalData.playerImagens[0]
+	$VBoxContainer/Holder2/Icon.texture = GlobalData.playerImagens[1]
+	$VBoxContainer/Holder3/Icon.texture = GlobalData.playerImagens[2]
+	$VBoxContainer/Holder4/Icon.texture = GlobalData.playerImagens[3]	
