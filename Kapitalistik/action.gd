@@ -8,7 +8,8 @@ func t1_inicio():
 	if (GlobalData.flag_caminho == false):
 		var players = []
 		players.resize(GlobalData.num_players)
-		players.fill(0)
+		for i in players.size():
+			players[i] = i
 		players.shuffle()
 		
 		for i in players.size():

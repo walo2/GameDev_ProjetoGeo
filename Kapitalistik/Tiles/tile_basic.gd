@@ -5,6 +5,7 @@ var mouseReleaseObject = true
 var iniciou = false
 var playersOnTile = []
 var tileCerto = false
+var tileAlvo = 0
 
 @onready var sorteOuReves = load("res://Imgs/sorteOuReves.png")
 @onready var sprite = $Sprite2D
@@ -18,7 +19,7 @@ var tileCerto = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if idNumero == 1:
-		Controlador.TileInicial = self
+		GlobalData.TileInicial = self
 	bdColor.color = colorTile
 	if idNumero == 3 or idNumero == 8 or idNumero == 12:
 		sprite.texture = sorteOuReves
@@ -31,7 +32,7 @@ func _ready():
 func _process(delta):
 	playersPosition()
 	if mouseReleaseObject == true and playerObject != null:
-		if playerObject.posicaoAtual + Controlador.numeroSorteado != idNumero:
+		if tileAlvo != idNumero:
 			playerObject.newPosition(playerObject.posicaoInicial.x, playerObject.posicaoInicial.y)
 			playerObject = null
 		if tileCerto == true:
@@ -42,7 +43,7 @@ func _process(delta):
 			elif(idNumero == 2):
 				Action.t2_forca_de_trabalho(playerObject.playerId)
 			elif(idNumero == 3 || idNumero == 8 || idNumero == 12):
-				Action.t_sorte_ou_reves(playerObject.playerId, Controlador.numeroSorteado)
+				Action.t_sorte_ou_reves(playerObject.playerId, GlobalData.numeroSorteado)
 			elif(idNumero == 4):
 				Action.t4_comprar_casa(playerObject.playerId)
 			elif(idNumero == 5):
@@ -64,7 +65,7 @@ func _process(delta):
 			elif(idNumero == 15):
 				Action.t15_ferias(playerObject.playerId)
 			playerObject = null		
-			Controlador.proximaFase()
+			GlobalData.proximaFase()
 			tileCerto = false
 	pass
 
@@ -102,10 +103,20 @@ func inicioJogo(playerObIni):
 	playersPosition()
 
 func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	if Controlador.fase == 2:
+	if GlobalData.fase == 2:
 		var player = area.get_parent()
 		playerObject = player
-		if player.posicaoAtual + Controlador.numeroSorteado == idNumero:
+		
+		if player.posicaoAtual == 15:
+			tileAlvo = 1
+		elif player.posicaoAtual + GlobalData.numeroSorteado < 1:
+			tileAlvo = 1
+		elif player.posicaoAtual + GlobalData.numeroSorteado > 15:
+			tileAlvo = 15
+		else:
+			tileAlvo = player.posicaoAtual + GlobalData.numeroSorteado
+		
+		if tileAlvo == idNumero:
 			playersOnTile.append(player)
 			tileCerto = true
 		elif player.posicaoAtual == idNumero:

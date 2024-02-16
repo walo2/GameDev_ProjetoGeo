@@ -16,7 +16,7 @@ var noTile = true
 func _ready():
 	get_node("ColorPlayer").color = colorPlayer
 	get_node("Label").text = str(playerId)
-	Controlador.TileInicial.inicioJogo(self)
+	GlobalData.TileInicial.inicioJogo(self)
 	posicaoInicial = position
 	pass # Replace with function body.
 
@@ -28,7 +28,7 @@ func _process(delta):
 	pass
 
 func _on_button_button_down():
-	if Controlador.playerTurn == playerId and Controlador.fase == 2:
+	if GlobalData.playerTurn == playerId and GlobalData.fase == 2:
 		posicaoInicial = position
 		drag = true
 		offset = get_global_mouse_position() - global_position
