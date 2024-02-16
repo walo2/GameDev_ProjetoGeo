@@ -5,6 +5,8 @@ extends Node
 @export var player_money = [0, 0, 0, 0]
 #índice corresponde ao jogador; exemplo: caminho[0] = 1 significa que o jogador 1 segue caminho Diamante
 @export var caminho = [0, 0, 0, 0]
+@export var playerImagens = [preload("res://Imgs/ferro1.png"),preload("res://Imgs/ferro2.png"),
+						preload("res://Imgs/diamante1.png"),preload("res://Imgs/diamante2.png")]
 
 @export var flag_caminho = false #sinaliza que os caminhos Diamante e Ferro já foram determinados
 
@@ -14,6 +16,7 @@ var playerTurn = 0
 var numeroSorteado = 0
 var TileInicial
 var pularTurno = []
+var updatePlayerImagem = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -59,3 +62,4 @@ func numeroRoleta(numero):
 func fimTurno():
 	playerTurn = (playerTurn+1) % num_players
 	fase = 0
+

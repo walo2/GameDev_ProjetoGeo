@@ -11,19 +11,31 @@ func t1_inicio():
 		for i in players.size():
 			players[i] = i
 		players.shuffle()
+		var diamante = 0
+		var ferro = 0
 		
 		for i in players.size():
 			if (i%2==0):
 				GlobalData.caminho[players[i]] = 1 #Diamante
 				GlobalData.player_money[players[i]] = 1000 * i
-				print("Jogador ", players[i], "é Diamante, saldo = ", GlobalData.player_money[players[i]])
+				print("Jogador ", players[i], " é Diamante, saldo = ", GlobalData.player_money[players[i]])
+				if diamante == 0:
+					diamante += 1
+					GlobalData.playerImagens[i] = load("res://Imgs/diamante1.png")
+				else:
+					GlobalData.playerImagens[i] = load("res://Imgs/diamante2.png")
 			else:
 				GlobalData.caminho[players[i]] = 2 #Ferro
 				GlobalData.player_money[players[i]] = 1000 * i
-				print("Jogador ", players[i], "é Ferro, saldo = ", GlobalData.player_money[players[i]])
+				print("Jogador ", players[i], " é Ferro, saldo = ", GlobalData.player_money[players[i]])
+				if ferro == 0:
+					ferro += 1
+					GlobalData.playerImagens[i] = load("res://Imgs/ferro1.png")
+				else:
+					GlobalData.playerImagens[i] = load("res://Imgs/ferro2.png")
 		
+		GlobalData.updatePlayerImagem = true
 		GlobalData.flag_caminho = true
-		
 
 #2 - Venda da força de trabalho- Os jogadores 1 e 3- receberão 300$, Os jogadores 2 e 4 - receberão 200$. 
 func t2_forca_de_trabalho(playerId):
