@@ -14,10 +14,10 @@ script = ExtResource("1_dj65v")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 994.0
-offset_top = 270.0
-offset_right = 2.0
-offset_bottom = -2.0
+offset_left = 944.0
+offset_top = 264.0
+offset_right = -48.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -25,13 +25,29 @@ grow_vertical = 2
 layout_mode = 2
 
 [node name="Icon" parent="VBoxContainer/Holder" index="0"]
+offset_left = -16.0
+offset_top = -19.0
+offset_right = 62.0
+offset_bottom = 47.0
 texture = ExtResource("3_qiwir")
 
 [node name="User" parent="VBoxContainer/Holder" index="1"]
+offset_top = -22.0
+offset_right = 172.0
+offset_bottom = 22.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "Larissa
 "
 
 [node name="Saldo" parent="VBoxContainer/Holder" index="2"]
+offset_top = 12.0
+offset_right = 212.0
+offset_bottom = 56.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "R$ 200,00
 "
 
@@ -39,12 +55,28 @@ text = "R$ 200,00
 layout_mode = 2
 
 [node name="Icon" parent="VBoxContainer/Holder2" index="0"]
+offset_left = -16.0
+offset_top = -19.0
+offset_right = 62.0
+offset_bottom = 47.0
 texture = ExtResource("4_y6fcc")
 
 [node name="User" parent="VBoxContainer/Holder2" index="1"]
+offset_top = -22.0
+offset_right = 152.0
+offset_bottom = 22.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "Paulo"
 
 [node name="Saldo" parent="VBoxContainer/Holder2" index="2"]
+offset_top = 12.0
+offset_right = 194.0
+offset_bottom = 56.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "R$ 50,00
 "
 
@@ -52,12 +84,28 @@ text = "R$ 50,00
 layout_mode = 2
 
 [node name="Icon" parent="VBoxContainer/Holder3" index="0"]
+offset_left = -16.0
+offset_top = -20.0
+offset_right = 62.0
+offset_bottom = 46.0
 texture = ExtResource("5_bnhn7")
 
 [node name="User" parent="VBoxContainer/Holder3" index="1"]
+offset_top = -22.0
+offset_right = 175.0
+offset_bottom = 22.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "Natália"
 
 [node name="Saldo" parent="VBoxContainer/Holder3" index="2"]
+offset_top = 12.0
+offset_right = 230.0
+offset_bottom = 56.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "R$ 3000,00
 "
 
@@ -65,12 +113,28 @@ text = "R$ 3000,00
 layout_mode = 2
 
 [node name="Icon" parent="VBoxContainer/Holder4" index="0"]
+offset_left = -16.0
+offset_top = -21.0
+offset_right = 62.0
+offset_bottom = 45.0
 texture = ExtResource("6_nyk0m")
 
 [node name="User" parent="VBoxContainer/Holder4" index="1"]
+offset_top = -22.0
+offset_right = 166.0
+offset_bottom = 22.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "Murilo"
 
 [node name="Saldo" parent="VBoxContainer/Holder4" index="2"]
+offset_top = 12.0
+offset_right = 230.0
+offset_bottom = 56.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 26
 text = "R$ 1500,00"
 
 [editable path="VBoxContainer/Holder"]
