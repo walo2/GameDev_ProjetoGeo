@@ -18,6 +18,7 @@ var tileAlvo = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_node("Label").text = str(idNumero)
 	if idNumero == 1:
 		GlobalData.TileInicial = self
 	bdColor.color = colorTile
@@ -38,6 +39,7 @@ func _process(delta):
 		if tileCerto == true:
 			playerObject.posicaoAtual = idNumero
 			playerObject.posicaoInicial = position
+			#Ações:
 			if(idNumero == 1):
 				Action.t1_inicio()
 			elif(idNumero == 2):
