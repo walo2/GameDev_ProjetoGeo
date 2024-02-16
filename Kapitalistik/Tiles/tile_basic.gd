@@ -38,6 +38,34 @@ func _process(delta):
 			playerObject.posicaoAtual = idNumero
 			playerObject.posicaoInicial = position
 			playerObject = null
+			
+			if(idNumero == 1):
+				Action.t1_inicio()
+			elif(idNumero == 2):
+				Action.t2_forca_de_trabalho(playerObject.playerId)
+			elif(idNumero == 3 || idNumero == 8 || idNumero == 12):
+				Action.t_sorte_ou_reves(playerObject.playerId, Controlador.numeroSorteado)
+			elif(idNumero == 4):
+				Action.t4_comprar_casa(playerObject.playerId)
+			elif(idNumero == 5):
+				Action.t5_perguntas(playerObject.playerId)
+			elif(idNumero == 6):
+				Action.t6_formacao(playerObject.playerId)
+			elif(idNumero == 7):
+				Action.t7_feira(playerObject.playerId)
+			elif(idNumero == 9):
+				Action.t9_agricultura(playerObject.playerId)
+			elif(idNumero == 10):
+				Action.t10_plano_de_saude(playerObject.playerId)
+			elif(idNumero == 11):
+				Action.t11_grandes_fortunas(playerObject.playerId)
+			elif(idNumero == 13):
+				Action.t11_grandes_fortunas(playerObject.playerId)
+			elif(idNumero == 14):
+				Action.t14_recuperacao_ambiental(playerObject.playerId)
+			elif(idNumero == 15):
+				Action.t15_ferias(playerObject.playerId)
+		
 			Controlador.proximaFase()
 			tileCerto = false
 	pass

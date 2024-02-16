@@ -6,7 +6,7 @@ extends Node
 #índice corresponde ao jogador; exemplo: caminho[0] = 1 significa que o jogador 1 segue caminho Diamante
 @export var caminho = [0, 0, 0, 0]
 
-@export var flag_caminho = false
+@export var flag_caminho = false #sinaliza que os caminhos Diamante e Ferro já foram determinados
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

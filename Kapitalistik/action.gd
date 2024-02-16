@@ -21,6 +21,8 @@ func t1_inicio():
 				GlobalData.player_money[players[i]] = 1000 * i
 				print("Jogador ", players[i], "é Ferro, saldo = ", GlobalData.player_money[players[i]])
 		
+		GlobalData.flag_caminho = true
+		
 
 #2 - Venda da força de trabalho- Os jogadores 1 e 3- receberão 300$, Os jogadores 2 e 4 - receberão 200$. 
 func t2_forca_de_trabalho(playerId):
