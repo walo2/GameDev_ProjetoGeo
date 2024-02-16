@@ -17,6 +17,14 @@ func _ready():
 	for i in GlobalData.num_players:
 		holder[i].visible = true
 		
+	update_data()
+	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	update_data()
+
+func update_data():
 	$VBoxContainer/Holder/User.text = GlobalData.player_names[0]
 	$VBoxContainer/Holder/Saldo.text = "R$ " + str(GlobalData.player_money[0])
 	
@@ -28,10 +36,3 @@ func _ready():
 	
 	$VBoxContainer/Holder4/User.text = GlobalData.player_names[3]
 	$VBoxContainer/Holder4/Saldo.text = "R$ " + str(GlobalData.player_money[3])
-	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
