@@ -20,6 +20,7 @@ func _process(delta):
 
 func _on_2players_pressed():
 	num_players_selected = 2
+	print(GlobalData.num_players)
 	GlobalData.set_num_players(num_players_selected)
 	labels[0].visible = true
 	labels[1].visible = true
@@ -29,6 +30,7 @@ func _on_2players_pressed():
 func _on_3players_pressed():
 	num_players_selected = 3
 	GlobalData.set_num_players(num_players_selected)
+	print(GlobalData.num_players)
 	labels[0].visible = true
 	labels[1].visible = true
 	labels[2].visible = true
@@ -39,6 +41,7 @@ func _on_3players_pressed():
 func _on_4players_pressed():
 	num_players_selected = 4
 	GlobalData.set_num_players(num_players_selected)
+	print(GlobalData.num_players)
 	labels[0].visible = true
 	labels[1].visible = true
 	labels[2].visible = true

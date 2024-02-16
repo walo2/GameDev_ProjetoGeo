@@ -1,6 +1,6 @@
 extends Node
 
-@export var num_players = 2
+@export var num_players = 4
 @export var player_names = ["1", "2", "3", "4"]
 @export var player_money = [0, 0, 0, 0]
 

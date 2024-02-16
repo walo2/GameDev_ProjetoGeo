@@ -117,6 +117,20 @@ text = "2 jogadores
 "
 
 [node name="3Players" type="Button" parent="Background"]
+layout_mode = 2
+offset_left = 528.0
+offset_top = 168.0
+offset_right = 626.0
+offset_bottom = 264.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_nl0wd")
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "3 jogadores
+"
+
+[node name="4Players" type="Button" parent="Background"]
 top_level = true
 layout_mode = 2
 offset_left = 704.0
@@ -129,20 +143,6 @@ size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_nl0wd")
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "4 jogadores
-"
-
-[node name="4Players" type="Button" parent="Background"]
-layout_mode = 2
-offset_left = 528.0
-offset_top = 168.0
-offset_right = 626.0
-offset_bottom = 264.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_stretch_ratio = 0.0
-theme = SubResource("Theme_nl0wd")
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-text = "3 jogadores
 "
 
 [node name="Label" type="Label" parent="."]
@@ -216,11 +216,10 @@ text = "Enter
 "
 
 [connection signal="pressed" from="Background/2Players" to="." method="_on_2players_pressed"]
-[connection signal="pressed" from="Background/3Players" to="." method="_on_4players_pressed"]
-[connection signal="pressed" from="Background/4Players" to="." method="_on_3players_pressed"]
+[connection signal="pressed" from="Background/3Players" to="." method="_on_3players_pressed"]
+[connection signal="pressed" from="Background/4Players" to="." method="_on_4players_pressed"]
 [connection signal="text_changed" from="Player1_name" to="." method="_on_player_1_name_text_changed"]
 [connection signal="text_changed" from="Player2_name" to="." method="_on_player_2_name_text_changed"]
 [connection signal="text_changed" from="Player3_name" to="." method="_on_player_3_name_text_changed"]
 [connection signal="text_changed" from="Player4_name" to="." method="_on_player_4_name_text_changed"]
 [connection signal="pressed" from="Enter" to="." method="_on_enter_pressed"]
-[connection signal="pressed" from="Enter" to="." method="_on_4players_pressed"]
