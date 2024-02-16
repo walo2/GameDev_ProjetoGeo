@@ -37,8 +37,6 @@ func _process(delta):
 		if tileCerto == true:
 			playerObject.posicaoAtual = idNumero
 			playerObject.posicaoInicial = position
-			playerObject = null
-			
 			if(idNumero == 1):
 				Action.t1_inicio()
 			elif(idNumero == 2):
@@ -65,7 +63,7 @@ func _process(delta):
 				Action.t14_recuperacao_ambiental(playerObject.playerId)
 			elif(idNumero == 15):
 				Action.t15_ferias(playerObject.playerId)
-		
+			playerObject = null		
 			Controlador.proximaFase()
 			tileCerto = false
 	pass

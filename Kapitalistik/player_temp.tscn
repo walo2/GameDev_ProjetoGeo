@@ -61,6 +61,14 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_wc8ab")
 
+[node name="Label" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -22.0
+offset_bottom = 1.0
+scale = Vector2(2, 2)
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
